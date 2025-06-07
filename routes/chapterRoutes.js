@@ -9,7 +9,6 @@ const cache = require("../middlewares/cache");
 const adminAuth = require("../middlewares/adminAuth");
 
 const router = express.Router();
-const upload = multer();
 
 router.get("/chapters", cache, getChapters);
 router.get("/chapters/:id", getChapter);
